@@ -16,7 +16,8 @@ MESSAGE="Installing fish and tmux" ; green_echo
 brew install fish tmux
 
 #Configure python (pip, virtualenv)
-MESSAGE="Installing pip and virtualenv" ; green_echo
+MESSAGE="Installing python, pip and virtualenv" ; green_echo
+brew install python3
 curl https://bootstrap.pypa.io/get-pip.py -o tmp/get-pip.py
 sudo python tmp/get-pip.py
 sudo pip install virtualenv
